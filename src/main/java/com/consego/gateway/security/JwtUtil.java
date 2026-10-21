@@ -25,7 +25,7 @@ public class JwtUtil {
             //log.warn("El token JWT ha expirado.");
             return !expired;
         } catch (JwtException | IllegalArgumentException e) {
-            log.error("Token JWT inválido: {}", e.getMessage());
+            //log.error("Token JWT inválido: {}", e.getMessage());
             return false;
         }
     }
